@@ -389,7 +389,7 @@ describe("Babel", function () {
 
   it("should parse and print dynamic import(...)", function () {
     var code = 'wait(import("oyez"));';
-    var ast = recast.parse(code, parseOptions);
+  var ast = recast.parse(code, parseOptions);
     assert.strictEqual(
       recast.prettyPrint(ast).code,
       code
@@ -410,5 +410,18 @@ describe("Babel", function () {
         }
       }
     });
+  });
+
+  it("prints numbers in bases other than 10 without converting them", function() {
+    var code = [
+      'let decimal = 6;',
+      'let hex = 0xf00d;',
+      'let binary = 0b1010;',
+      'let octal = 0o744;'
+    ].join(eol);
+
+    var ast = recast.parse(code, parseOptions);
+    var output = recast.print(ast, { tabWidth: 2 }).code;
+    assert.strictEqual(output, code);
   });
 });
