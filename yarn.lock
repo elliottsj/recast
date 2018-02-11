@@ -14,9 +14,13 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-ast-types@0.10.1:
+ast-types@Phoenixmatrix/ast-types#typescript-initial:
+  version "0.10.2"
+  resolved "https://codeload.github.com/Phoenixmatrix/ast-types/tar.gz/87bcc0a3ac5e0b92b11a789c5e8722f43430bd37"
+
+ast-types@elliottsj/ast-types#typescript-initial:
   version "0.10.1"
-  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.10.1.tgz#f52fca9715579a14f841d67d7f8d25432ab6a3dd"
+  resolved "https://codeload.github.com/elliottsj/ast-types/tar.gz/d182f1db5b0fe4366c06b52637d49700e5fa9f21"
 
 babel-code-frame@^6.26.0:
   version "6.26.0"
